@@ -1,0 +1,54 @@
+@import "../../../../../variables";
+
+.container {
+  padding-right: 32px;
+  padding-left: 32px;
+  justify-content: space-between;
+  height: 57px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: $pureWhite;
+
+  .main-part {
+    flex: 3;
+
+    .items-holder {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      padding-right: 10px;
+      cursor: pointer;
+
+      li {
+        font-size: 12px;
+        color: $kilidDark;
+      }
+    }
+  }
+
+  .buttons-part {
+    flex: 1;
+    justify-content: flex-end;
+
+    .btn {
+      font-family: $kilidFontNormal;
+      width: 73px;
+      height: 29px;
+      border-radius: 50px;
+      border: solid 1px $kilidPink;
+      background-color: $kilidPink;
+      color: $pureWhite;
+      cursor: pointer;
+    }
+    :last-child {
+      background-color: $pureWhite;
+      color: $kilidPink;
+      margin-right: 5px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
