@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col-1">
+    <div class="col" *ngFor="let data of footerData">
+      <div class="title">{{ data.title }}</div>
+      <ul *ngFor="let link of data.links">
+        <li>{{ link }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="container">
+      <img src="../../../../../assets/images/footer-logo-per.svg" />
+      <div class="text">
+        نشانی: تهران ، کیلومتر 20 جاده دماوند، پارک فناوری پردیس
+      </div>
+      <img src="../../../../../assets/images/social-group.svg" />
+      <img
+        src="../../../../../assets/images/group.svg"
+        style="margin-top: 30px"
+      />
+    </div>
+  </div>
+</div>
