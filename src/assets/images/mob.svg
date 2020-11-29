@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297.26" height="515.018" viewBox="0 0 297.26 515.018">
+  <g id="Group_148" data-name="Group 148" transform="translate(1 1)">
+    <g id="Group_111" data-name="Group 111" transform="translate(0 0)">
+      <g id="ios">
+        <path id="Path_36" data-name="Path 36" d="M299.01,469.555V37.479a33.967,33.967,0,0,0-34-33.729H37.754a33.967,33.967,0,0,0-34,33.729V514.607" transform="translate(-3.75 -3.75)" fill="none" stroke="#727171" stroke-miterlimit="2.613" stroke-width="2" fill-rule="evenodd"/>
+        <path id="Path_37" data-name="Path 37" d="M295.884,554.738V178.66H34.98V603.588" transform="translate(-16.531 -89.57)" fill="none" stroke="#727171" stroke-miterlimit="2.613" stroke-width="3" fill-rule="evenodd"/>
+        <rect id="Rectangle_131" data-name="Rectangle 131" width="52.814" height="8.909" rx="4.454" transform="translate(121.541 45.816)" fill="none" stroke="#727171" stroke-miterlimit="2.613" stroke-width="3"/>
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="7.319" cy="7.319" r="7.319" transform="translate(192.488 42.953)" fill="none" stroke="#727171" stroke-miterlimit="2.613" stroke-width="3"/>
+        <path id="Path_41" data-name="Path 41" d="M287.428,455.127V36.434A32.773,32.773,0,0,0,254.758,3.75H36.42A32.773,32.773,0,0,0,3.75,36.434V498.783" transform="translate(2.041 2.054)" fill="none" stroke="#727171" stroke-miterlimit="2.613" stroke-width="1" fill-rule="evenodd" opacity="0.7"/>
+      </g>
+    </g>
+  </g>
+</svg>
