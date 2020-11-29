@@ -1,0 +1,122 @@
+<ng-container>
+  <app-header></app-header>
+  <div class="main-content">
+    <!-- #region top-part -->
+    <div class="top-part">
+      <div class="inner-content">
+        <h4>خرید خانه با کیلید</h4>
+        <p>کیلید شما را در یافتن خانه یاری می کند</p>
+        <div class="search-part">
+          <input
+            class="search-input"
+            placeholder="نام محله، منطقه و یا ایستگاه مترو مورد نظر را وارد کنید"
+            autocomplete="off"
+          />
+          <div class="search-icon">
+            <i class="material-icons" data-icon="search"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endegion -->
+    <div class="sub-header">
+      <div class="text">قیمت خانه‌ی شما امروز چند است؟</div>
+      <div class="link-btn">قیمت خانه شما</div>
+    </div>
+
+    <!-- #region under-banner -->
+    <div class="under-banner">
+      <div class="inner-container">
+        <div class="title">ارزیابی هوشمند قیمت ملک چیست؟</div>
+        <div class="text">
+          این سیستم با تحلیل اطلاعات جامع قادر به تخمین قیمت ملک با خطای کمتر از
+          10درصد تنها با استفاده از کد پستی ملک مورد نظـر است ارزیـابی هوشمنـد
+          قیمت ملک کیلید بـه سادگـی قابـل استفـاده بـرای عمــوم مــردم و
+          همچنـیــن علاقــه منــدان بــه سرمایه گـذرای در بـازار مسکن است
+        </div>
+      </div>
+    </div>
+    <!-- #endegion -->
+
+    <!-- #region selection-part -->
+    <div class="selection-part">
+      <mat-select
+        floatlLabel="never"
+        placeholder="نام شهر مورد نظر خود را انتخاب کنید"
+        disableOptionCentering
+        panelClass="dropDown-panel"
+        (selectionChange)="onCityChange($event.value)"
+      >
+        <mat-option *ngFor="let city of cities" [value]="city?.cityId">
+          {{ city?.faName }}
+        </mat-option>
+      </mat-select>
+    </div>
+    <!-- #endegion -->
+
+    <!-- #region selection-part -->
+    <div class="gallery">
+      <div class="container">
+        <div class="first-col">
+          <div class="big-img" style="margin-bottom: 8px"></div>
+          <div class="row">
+            <div class="small-img"></div>
+            <div class="small-img" style="margin-right: 8px"></div>
+          </div>
+        </div>
+        <div class="second-col">
+          <div class="row" style="margin-bottom: 8px">
+            <div class="small-img" style="margin-left: 8px"></div>
+            <div class="horizontal-img"></div>
+          </div>
+          <div class="row">
+            <div class="big-img" style="margin-left: 8px"></div>
+            <div class="vertical-img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endegion -->
+
+    <!-- #region get-app-part -->
+    <div class="get-app-part">
+      <div class="container">
+        <div class="col-1">
+          <div class="title">کیلید خود را همیشه همراه داشته باشید</div>
+          <p>دریافت اپلیکیشن کیلید</p>
+          <div class="row">
+            <img src="../../../../assets/images/android.png" />
+            <img
+              src="../../../../assets/images/iphone.png"
+              style="margin-right: 6px"
+            />
+          </div>
+        </div>
+        <div class="col-2">
+          <img src="../../../../assets/images/small-mob.svg" />
+          <img
+            src="../../../../assets/images/mob.svg"
+            style="margin-right: 20px"
+          />
+        </div>
+      </div>
+
+      <div class="triangle"></div>
+    </div>
+    <!-- #endegion -->
+
+    <!-- #region card-box-part -->
+    <div class="card-box-part">
+      <div class="box">
+        <div class="card" *ngFor="let card of cards">
+          <img src="../../../../assets/images/{{ card.icon }}" />
+          <div class="title">{{ card.title }}</div>
+          <div class="text">{{ card.text }}</div>
+          <div class="btn">بیشتر...</div>
+        </div>
+      </div>
+    </div>
+    <!-- #endegion -->
+  </div>
+  <app-footer></app-footer>
+</ng-container>
